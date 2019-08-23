@@ -1,0 +1,29 @@
+20:55:16 **** Incremental Build of configuration Debug for project Ejercicio 1 ****
+make all 
+Building file: ../src/Ejercicio 1.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ejercicio 1.d" -MT"src/Ejercicio\ 1.d" -o "src/Ejercicio 1.o" "../src/Ejercicio 1.c"
+../src/Ejercicio 1.c: In function ‘main’:
+../src/Ejercicio 1.c:24:2: error: ‘resultado’ undeclared (first use in this function)
+  resultado = sumar(numero1,numero2,&resSum,&resRes);
+  ^~~~~~~~~
+../src/Ejercicio 1.c:24:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/Ejercicio 1.c:24:14: warning: implicit declaration of function ‘sumar’ [-Wimplicit-function-declaration]
+  resultado = sumar(numero1,numero2,&resSum,&resRes);
+              ^~~~~
+../src/Ejercicio 1.c:25:44: error: ‘resultadoSuma’ undeclared (first use in this function)
+  printf("El resultado es de la suma es %d",resultadoSuma);
+                                            ^~~~~~~~~~~~~
+../src/Ejercicio 1.c: In function ‘sumar’:
+../src/Ejercicio 1.c:35:8: error: ‘resSum’ undeclared (first use in this function)
+  *d1 = resSum;
+        ^~~~~~
+../src/Ejercicio 1.c:36:8: error: ‘resRes’ undeclared (first use in this function)
+  *d2 = resRes;
+        ^~~~~~
+src/subdir.mk:18: fallo en las instrucciones para el objetivo 'src/Ejercicio 1.o'
+make: *** [src/Ejercicio 1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+20:55:16 Build Failed. 6 errors, 1 warnings. (took 559ms)
+
