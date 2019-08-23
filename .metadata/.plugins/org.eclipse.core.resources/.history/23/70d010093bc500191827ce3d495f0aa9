@@ -22,7 +22,7 @@ int main(void)
 	printf("Ingrese otro numero: ");
 	scanf("%d",&numero2);
 	resultado = sumar(numero1,numero2,&resSum,&resRes);
-	printf("El resultado es %d",resultadoSuma);
+	printf("El resultado es de la suma es %d",resultadoSuma);
 	return 0;
 }
 
